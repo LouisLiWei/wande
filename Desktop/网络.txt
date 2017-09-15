@@ -1,0 +1,66 @@
+﻿qd10@sz.itcast.cn		mvaj78g9
+
+
+ipconfig
+
+A17084393   111111
+
+qd10@sz.itcast.cn   99duz77d
+
+github   LouisLiWei  louis85
+
+
+图灵机器人  http://www.tuling123.com/member/center/index.jhtml
+
+lwei_web@163.com   l443986991
+
+
+location.href = '页面地址'	页面跳转
+location.reload();		页面刷新
+location.search			获取get请求的参数	www.baidu.com?name=ccc&age=160 ==>'?name=ccc&age=160'
+location.hash			获取hash值		www.baidu.com#123  ==>#123
+
+项目一：
+博学谷(9天)
+-->2天git
+	-->版本控制工具/代码托管
+	-->svn
+	-->tfs maven 
+-->1天requireJS
+	-->模块化解决方案
+	
+	-->面向过程-->面向对象-->模块化-->mv*框架(angular、vue、avalon、backbone)-->组件化(react)
+					mvc mvvm mvp
+-->6天博学谷项目
+	-->（C：create  R:read U:update D:delete）：增删改查
+	-->闭包、原型链
+		-->有机的使用某些知识点
+			-->实现某个功能就能想到用什么实现
+			-->代码出现问题：什么原因导致的？
+				-->num is not defined
+				-->fn is not a function
+				-->变量名重复、作用域
+				-->this的值的指向
+					-->内置函数：setInterval(window)  事件绑定(jquery)  forEach/map
+	-->综合运用：bootstrap(css、js)、jquery、arttemplate、日期控件、上传组件(uploadify/file upload)、富文本编辑器(ueditor、ckeditor)、数据可视化(图表-->echarts、highcharts)
+	
+	-->学习方法：
+		1、把控整个项目的实现流程-->把控某个功能的基本流程(多思考)
+		2、解决bug：有理有据
+
+
+
+### AMD规范和CMD规范比较大的区别：
+AMD规范就是指requireJS
+    -->async module define：异步模块定义(异步加载模块、依赖前置)
+        -->模块定义和导入(使用)：define定义一个模块，define(["导入的模块"])/require(["导入模块"])
+        -->异步加载模块   动态创建script标签
+        -->依赖前置：把所有依赖的模块放在文件的头部
+        
+CMD规范就是指的seajs
+    -->common module define：通用模块定义(同步加载模块)
+        -->模块定义和导入：exports/module.exports
+        -->同步加载模块
+        -->依赖就近：50行代码使用商品模块的功能，就在49行依赖商品模块
+            -->49行：var product=require("product");  //导入商品模块
+            -->50行：product.add([]);                 //初始化一个商品
